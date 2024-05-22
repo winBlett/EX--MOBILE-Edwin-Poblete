@@ -1,0 +1,290 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.10.19/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle"></span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="4026c5fa2a39f64f02227ab5de70483d96dbfffb59bbb265858f0a49de7cd335.html">Se Requiere Realizar Lo Siguiente :</a></span>
+                > <span class="truncate-60"><a
+                    href="e6016eb7c83a3eb30b530223227744fbf6d0b6d180fbf2cc5e415bcca835d2e0.html">Listar,Crear,Actualizar,Eliminar PETS </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 23-01-2023 14:50</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Se Requiere Realizar Lo Siguiente : </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                <ol>
+<li>Listar Pets</li>
+<li>Crear Pet</li>
+<li>Actualizar Pet</li>
+<li>Eliminar Pet</li>
+<li>Realizar Flujo de Autorización (API Key) y luego invocar a cualquier operación.</li>
+</ol>
+
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="396054e7cfecbec25cb14f4e74d28b26667776726b11e2e46e556a52682938cb.html">Pagina Principal Pets
+                                    (tag)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="4c8fe6c94cf8ed7905a868f956feb27ebee642d138c4eda484eaae5a21a512e0.html">Pet Store
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Listar,Crear,Actualizar,Eliminar PETS
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Dado validar que se ingreso a la pagina<br>Cuando doy clic en el icono de desplegar lista<br>Y doy clic en el boton Try it out<br>Y doy clic en el boton Execute<br>Cuando doy clic en el icono de agregar Pet<br>Y doy clic en el boton Try it out<br>Y doy clic en el boton Execute<br>Cuando doy clic en el icono de actualizar Pet<br>Y doy clic en el boton Try it out<br>Y ingreso petId"&lt;vpetId&gt;"<br>Y ingreso name"&lt;vName&gt;"<br>Y ingresamos status"&lt;vStatus&gt;"<br>Y doy clic en el boton Execute<br>Cuando doy clic en el icono de eliminar Pet<br>Y doy clic en el boton Try it out<br>Y ingreso api_key"&lt;vapi_key&gt;"<br>Y ingreso pet_id"&lt;vpet_id&gt;"<br>Y doy clic en el boton Execute</div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="67b1d638b1997bdeff543479d73584944312145433bd61b7e14ba84cb187957c.png" title=" Example: {vpetId=6000600, vName=Edwin Poblete, vStatus=400, vapi_key=test, vpet_id=abc123}" width="1366"/>
+                <img src="67b1d638b1997bdeff543479d73584944312145433bd61b7e14ba84cb187957c.png" title=" Dado Que abrimos la pagina Principal" width="1366"/>
+                <img src="67b1d638b1997bdeff543479d73584944312145433bd61b7e14ba84cb187957c.png" title=" Abrimos pagina principal" width="1366"/>
+                <img src="67b1d638b1997bdeff543479d73584944312145433bd61b7e14ba84cb187957c.png" title=" Dado Que abrimos la pagina Principal (completed)" width="1366"/>
+                <img src="67b1d638b1997bdeff543479d73584944312145433bd61b7e14ba84cb187957c.png" title=" Dado validar que se ingreso a la pagina" width="1366"/>
+                <img src="67b1d638b1997bdeff543479d73584944312145433bd61b7e14ba84cb187957c.png" title=" Validar ingreso pagina pets" width="1366"/>
+                <img src="67b1d638b1997bdeff543479d73584944312145433bd61b7e14ba84cb187957c.png" title=" Validar ingreso pagina pets (completed)" width="1366"/>
+                <img src="67b1d638b1997bdeff543479d73584944312145433bd61b7e14ba84cb187957c.png" title=" Dado validar que se ingreso a la pagina (completed)" width="1366"/>
+                <img src="67b1d638b1997bdeff543479d73584944312145433bd61b7e14ba84cb187957c.png" title=" Cuando doy clic en el icono de desplegar lista" width="1366"/>
+                <img src="7e2e20e3a08937e25da56d29e54982b47971ff18480d7027207446b403df3869.png" title=" Cuando doy clic en el icono de desplegar lista (completed)" width="1366"/>
+                <img src="7e2e20e3a08937e25da56d29e54982b47971ff18480d7027207446b403df3869.png" title=" Y doy clic en el boton Try it out" width="1366"/>
+                <img src="a39b8d346f035cacd445a8a6634c2839790735c45f8fd60d9f82a40f10252018.png" title=" Y doy clic en el boton Try it out (completed)" width="1366"/>
+                <img src="a39b8d346f035cacd445a8a6634c2839790735c45f8fd60d9f82a40f10252018.png" title=" Y doy clic en el boton Execute" width="1366"/>
+                <img src="ff1143b757f1642a94cd5ee2451db9fc58a6f0eb39cd92eedcb101b4ed08e6f6.png" title=" Y doy clic en el boton Execute (completed)" width="1366"/>
+                <img src="ff1143b757f1642a94cd5ee2451db9fc58a6f0eb39cd92eedcb101b4ed08e6f6.png" title=" Cuando doy clic en el icono de agregar Pet" width="1366"/>
+                <img src="a58fb6a84b9fb7fdf92ea6afcda924883ad7615e985dfcb3ce7d6a700a3f29b9.png" title=" Cuando doy clic en el icono de agregar Pet (completed)" width="1366"/>
+                <img src="a58fb6a84b9fb7fdf92ea6afcda924883ad7615e985dfcb3ce7d6a700a3f29b9.png" title=" Y doy clic en el boton Try it out" width="1366"/>
+                <img src="495de6f7d2399d4b80f23c52a0f2800a6688553f3c6b9ca4239a25b29c63983d.png" title=" Y doy clic en el boton Try it out (completed)" width="1366"/>
+                <img src="495de6f7d2399d4b80f23c52a0f2800a6688553f3c6b9ca4239a25b29c63983d.png" title=" Y doy clic en el boton Execute" width="1366"/>
+                <img src="1d9c73f04762e41fa7e7de3dd5754528d7134730b67b785966b85da509f920a8.png" title=" Y doy clic en el boton Execute (completed)" width="1366"/>
+                <img src="1d9c73f04762e41fa7e7de3dd5754528d7134730b67b785966b85da509f920a8.png" title=" Cuando doy clic en el icono de actualizar Pet" width="1366"/>
+                <img src="538cdc68f9022159c48d8d263abb5535798fe6b75f048d9e7b48790b350b1b4a.png" title=" Cuando doy clic en el icono de actualizar Pet (completed)" width="1366"/>
+                <img src="538cdc68f9022159c48d8d263abb5535798fe6b75f048d9e7b48790b350b1b4a.png" title=" Y doy clic en el boton Try it out" width="1366"/>
+                <img src="a2004377a4b3eef0d9bda95b29a58211923fa087aa7954840f99df3e720e3de0.png" title=" Y doy clic en el boton Try it out (completed)" width="1366"/>
+                <img src="a2004377a4b3eef0d9bda95b29a58211923fa087aa7954840f99df3e720e3de0.png" title=" Y ingreso petId&quot;6000600&quot;" width="1366"/>
+                <img src="fafbbb098c51d050b0881dabff47eebb54b2e33094b9bb8bee14f0d51223c9a9.png" title=" Y ingreso petId&quot;6000600&quot; (completed)" width="1366"/>
+                <img src="fafbbb098c51d050b0881dabff47eebb54b2e33094b9bb8bee14f0d51223c9a9.png" title=" Y ingreso name&quot;Edwin Poblete&quot;" width="1366"/>
+                <img src="e74af7dfdeddd249ef92d0fb974411a21ce0ab03b4b120f850ca247a57f85650.png" title=" Y ingreso name&quot;Edwin Poblete&quot; (completed)" width="1366"/>
+                <img src="e74af7dfdeddd249ef92d0fb974411a21ce0ab03b4b120f850ca247a57f85650.png" title=" Y ingresamos status&quot;400&quot;" width="1366"/>
+                <img src="3feb379d89e14bb15c3541bc6274fe4fb7e9e37a34acfc8fbd234f97c72969b3.png" title=" Y ingresamos status&quot;400&quot; (completed)" width="1366"/>
+                <img src="3feb379d89e14bb15c3541bc6274fe4fb7e9e37a34acfc8fbd234f97c72969b3.png" title=" Y doy clic en el boton Execute" width="1366"/>
+                <img src="f0dab91a58c44a1921ad6655fa5bd4fb19c609b86dbc9440c12c4a7df4a0ddca.png" title=" Y doy clic en el boton Execute (completed)" width="1366"/>
+                <img src="f0dab91a58c44a1921ad6655fa5bd4fb19c609b86dbc9440c12c4a7df4a0ddca.png" title=" Cuando doy clic en el icono de eliminar Pet" width="1366"/>
+                <img src="ab21d76e1b5cc1f828cf240bc35a0e41f23ba7a8809365ccc9d04355066475aa.png" title=" Cuando doy clic en el icono de eliminar Pet (completed)" width="1366"/>
+                <img src="ab21d76e1b5cc1f828cf240bc35a0e41f23ba7a8809365ccc9d04355066475aa.png" title=" Y doy clic en el boton Try it out" width="1366"/>
+                <img src="c3733f52616a7d8c22c88168d1d50b5f65e9f36afc759a0be73b175e19566683.png" title=" Y doy clic en el boton Try it out (completed)" width="1366"/>
+                <img src="c3733f52616a7d8c22c88168d1d50b5f65e9f36afc759a0be73b175e19566683.png" title=" Y ingreso api_key&quot;test&quot;" width="1366"/>
+                <img src="2ca1740e91c141497e013dc7e5dbe626662a26c4b5ec3d129e95af591f7a51c4.png" title=" Y ingreso api_key&quot;test&quot; (completed)" width="1366"/>
+                <img src="2ca1740e91c141497e013dc7e5dbe626662a26c4b5ec3d129e95af591f7a51c4.png" title=" Y ingreso pet_id&quot;abc123&quot;" width="1366"/>
+                <img src="4a9780df96e23e2584acc98391f8d3ed1517edaa9c9828c73788742e9df127f6.png" title=" Y ingreso pet_id&quot;abc123&quot; (completed)" width="1366"/>
+                <img src="4a9780df96e23e2584acc98391f8d3ed1517edaa9c9828c73788742e9df127f6.png" title=" Y doy clic en el boton Execute" width="1366"/>
+                <img src="e9cf9513f667509e90216d78a84266ad4908b0dbc43b2261570a42fc3ea3f430.png" title=" Y doy clic en el boton Execute (completed)" width="1366"/>
+                <img src="e9cf9513f667509e90216d78a84266ad4908b0dbc43b2261570a42fc3ea3f430.png" title=" Example: {vpetId=6000600, vName=Edwin Poblete, vStatus=400, vapi_key=test, vpet_id=abc123} (completed): <span class='success-color'>SUCCESS</span>" width="1366"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.1.7</span>
+</div>
+</body>
+</html>

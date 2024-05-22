@@ -1,0 +1,63 @@
+<html lang="en"><head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Sample OAuth Provider</title>
+	
+		<link rel="stylesheet" href="/oauth/csso/auth.css">
+		<script src="/oauth/jso/jquery-1.8.0.min.js"></script>
+		<script src="/oauth/jso/auth.js"></script>
+	</head>
+
+
+<body>
+
+	<div class="container">
+
+		
+		
+
+		<div class="form-horizontal">
+			<header>
+				<img class="main_image" src="/oauth/imageso/dog.png">
+				<h1></h1>
+				<p class="oauth_body title">
+					<strong>Hello, <a href="#">Swagger Petstore</a>&nbsp;would like to you log in.</strong>
+				</p>
+				<p class="oauth_body">
+					This is a sample OAuth2 server which supports the Implicit or Client-side flow.  You can find
+					the source code to the server <a href="https://github.com/swagger-api/sample-oauth-provider#sample-oauth-provider">here</a>.
+				</p>
+				<p class="oauth_body">
+					Right now we have one user in our system: test, with passoword: abc123
+				</p>
+			</header>
+
+			<section class="email_form">
+				<form action="/oauth/login" method="post" role="form">
+
+					<div class="oauth_submit initial_form">
+						<button type="button" id="deny" class="button medium grey">
+							<span>Cancel and go back</span>
+						</button>
+						<button type="button" id="allow" class="button medium blue">
+							<span>Allow</span>
+						</button>
+					</div>
+					<div class="oauth_submit secondary_form">
+						<label for="username">Username</label>
+						<input id="username" name="username" type="text" placeholder="Username" value="test">
+						<label for="password">Password</label>
+						<input id="password" name="password" type="text" placeholder="Password" value="abc123">
+						<button type="submit" id="login" name="login" class="button medium blue">
+							<span>Confirm</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+
+
+
+
+</body></html>

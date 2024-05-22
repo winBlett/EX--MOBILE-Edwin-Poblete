@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Abrir la pagina Principal de Petstore" skipped="0" tests="1" time="16.95" timestamp="2023-01-23 11:16:03"><testcase name="Flujo Autorizacion"><error message="element not interactable&#10;  (Session info: chrome=109.0.5414.75)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'SU-212', ip: '192.168.0.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_362'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\Windows\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:60348}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: e888129300a8090ef0027c6683056a3b&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'SU-212', ip: '192.168.0.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_362'&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.ElementNotInteractableException">element not interactable
+  (Session info: chrome=109.0.5414.75)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SU-212', ip: '192.168.0.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_362'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\Windows\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:60348}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e888129300a8090ef0027c6683056a3b
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SU-212', ip: '192.168.0.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_362'
+Driver info: driver.version: unknown</error><system-err>element not interactable
+  (Session info: chrome=109.0.5414.75)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SU-212', ip: '192.168.0.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_362'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\Windows\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:60348}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e888129300a8090ef0027c6683056a3b
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SU-212', ip: '192.168.0.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_362'
+Driver info: driver.version: unknown&#13;
+com.bdd.page.petStore_Page.ingresarCredencial(petStore_Page.java:54)&#13;
+com.bdd.step.petStore_Step.ingresarCredencial(petStore_Step.java:45)&#13;
+com.bdd.stepDefinition.petStore_StepDefinition.ingresoCredencial(petStore_StepDefinition.java:52)&#13;
+✽.ingreso credencial"test"(src/test/resources/features/petStore.feature:14)&#13;
+</system-err></testcase></testsuite>

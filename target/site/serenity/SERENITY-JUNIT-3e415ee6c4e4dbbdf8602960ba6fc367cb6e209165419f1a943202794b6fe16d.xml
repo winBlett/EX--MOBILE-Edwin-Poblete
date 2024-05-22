@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="2" failures="0" name="Se requiere realizar lo siguiente :" skipped="0" tests="2" time="6.15" timestamp="2023-06-13 02:24:08"><testcase name="Flujo Autorizacion"><error message="Could not instantiate new WebDriver instance of type class org.openqa.selenium.chrome.ChromeDriver (session not created: This version of ChromeDriver only supports Chrome version 108&#10;Current browser version is 114.0.5735.110 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'LAPTOP-KVNLRS8F', ip: '192.168.40.158', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_362'&#10;Driver info: driver.version: ProvideNewDriver&#10;remote stacktrace: Backtrace:&#10;&#9;(No symbol) [0x009DF243]&#10;&#9;(No symbol) [0x00967FD1]&#10;&#9;(No symbol) [0x0085D04D]&#10;&#9;(No symbol) [0x0087F6B4]&#10;&#9;(No symbol) [0x0087A97C]&#10;&#9;(No symbol) [0x008782E9]&#10;&#9;(No symbol) [0x008AF056]&#10;&#9;(No symbol) [0x008AEB2A]&#10;&#9;(No symbol) [0x008A8386]&#10;&#9;(No symbol) [0x0088163C]&#10;&#9;(No symbol) [0x0088269D]&#10;&#9;GetHandleVerifier [0x00C79A22+2655074]&#10;&#9;GetHandleVerifier [0x00C6CA24+2601828]&#10;&#9;GetHandleVerifier [0x00A88C0A+619850]&#10;&#9;GetHandleVerifier [0x00A87830+614768]&#10;&#9;(No symbol) [0x009705FC]&#10;&#9;(No symbol) [0x00975968]&#10;&#9;(No symbol) [0x00975A55]&#10;&#9;(No symbol) [0x0098051B]&#10;&#9;BaseThreadInitThunk [0x75556BA9+25]&#10;&#9;RtlGetFullPathName_UEx [0x77078F9F+1215]&#10;&#9;RtlGetFullPathName_UEx [0x77078F6D+1165]&#10;). See below for more details." type="net.thucydides.core.webdriver.DriverConfigurationError">Could not instantiate new WebDriver instance of type class org.openqa.selenium.chrome.ChromeDriver (session not created: This version of ChromeDriver only supports Chrome version 108
+Current browser version is 114.0.5735.110 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-KVNLRS8F', ip: '192.168.40.158', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_362'
+Driver info: driver.version: ProvideNewDriver
+remote stacktrace: Backtrace:
+	(No symbol) [0x009DF243]
+	(No symbol) [0x00967FD1]
+	(No symbol) [0x0085D04D]
+	(No symbol) [0x0087F6B4]
+	(No symbol) [0x0087A97C]
+	(No symbol) [0x008782E9]
+	(No symbol) [0x008AF056]
+	(No symbol) [0x008AEB2A]
+	(No symbol) [0x008A8386]
+	(No symbol) [0x0088163C]
+	(No symbol) [0x0088269D]
+	GetHandleVerifier [0x00C79A22+2655074]
+	GetHandleVerifier [0x00C6CA24+2601828]
+	GetHandleVerifier [0x00A88C0A+619850]
+	GetHandleVerifier [0x00A87830+614768]
+	(No symbol) [0x009705FC]
+	(No symbol) [0x00975968]
+	(No symbol) [0x00975A55]
+	(No symbol) [0x0098051B]
+	BaseThreadInitThunk [0x75556BA9+25]
+	RtlGetFullPathName_UEx [0x77078F9F+1215]
+	RtlGetFullPathName_UEx [0x77078F6D+1165]
+). See below for more details.</error><system-err>Could not instantiate new WebDriver instance of type class org.openqa.selenium.chrome.ChromeDriver (session not created: This version of ChromeDriver only supports Chrome version 108
+Current browser version is 114.0.5735.110 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-KVNLRS8F', ip: '192.168.40.158', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_362'
+Driver info: driver.version: ProvideNewDriver
+remote stacktrace: Backtrace:
+	(No symbol) [0x009DF243]
+	(No symbol) [0x00967FD1]
+	(No symbol) [0x0085D04D]
+	(No symbol) [0x0087F6B4]
+	(No symbol) [0x0087A97C]
+	(No symbol) [0x008782E9]
+	(No symbol) [0x008AF056]
+	(No symbol) [0x008AEB2A]
+	(No symbol) [0x008A8386]
+	(No symbol) [0x0088163C]
+	(No symbol) [0x0088269D]
+	GetHandleVerifier [0x00C79A22+2655074]
+	GetHandleVerifier [0x00C6CA24+2601828]
+	GetHandleVerifier [0x00A88C0A+619850]
+	GetHandleVerifier [0x00A87830+614768]
+	(No symbol) [0x009705FC]
+	(No symbol) [0x00975968]
+	(No symbol) [0x00975A55]
+	(No symbol) [0x0098051B]
+	BaseThreadInitThunk [0x75556BA9+25]
+	RtlGetFullPathName_UEx [0x77078F9F+1215]
+	RtlGetFullPathName_UEx [0x77078F6D+1165]
+). See below for more details.&#13;
+com.bdd.step.petStore_Step.abrimosPaginaPrincipal(petStore_Step.java:13)&#13;
+com.bdd.stepDefinition.petStore_StepDefinition.que_abrimos_la_pagina_Principal(petStore_StepDefinition.java:17)&#13;
+cucumber.runner.Runner.runPickle(Runner.java:80)&#13;
+</system-err></testcase><testcase name="Listar,Crear,Actualizar,Eliminar PETS"><error message="Could not instantiate new WebDriver instance of type class org.openqa.selenium.chrome.ChromeDriver (session not created: This version of ChromeDriver only supports Chrome version 108&#10;Current browser version is 114.0.5735.110 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'LAPTOP-KVNLRS8F', ip: '192.168.40.158', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_362'&#10;Driver info: driver.version: ProvideNewDriver&#10;remote stacktrace: Backtrace:&#10;&#9;(No symbol) [0x009DF243]&#10;&#9;(No symbol) [0x00967FD1]&#10;&#9;(No symbol) [0x0085D04D]&#10;&#9;(No symbol) [0x0087F6B4]&#10;&#9;(No symbol) [0x0087A97C]&#10;&#9;(No symbol) [0x008782E9]&#10;&#9;(No symbol) [0x008AF056]&#10;&#9;(No symbol) [0x008AEB2A]&#10;&#9;(No symbol) [0x008A8386]&#10;&#9;(No symbol) [0x0088163C]&#10;&#9;(No symbol) [0x0088269D]&#10;&#9;GetHandleVerifier [0x00C79A22+2655074]&#10;&#9;GetHandleVerifier [0x00C6CA24+2601828]&#10;&#9;GetHandleVerifier [0x00A88C0A+619850]&#10;&#9;GetHandleVerifier [0x00A87830+614768]&#10;&#9;(No symbol) [0x009705FC]&#10;&#9;(No symbol) [0x00975968]&#10;&#9;(No symbol) [0x00975A55]&#10;&#9;(No symbol) [0x0098051B]&#10;&#9;BaseThreadInitThunk [0x75556BA9+25]&#10;&#9;RtlGetFullPathName_UEx [0x77078F9F+1215]&#10;&#9;RtlGetFullPathName_UEx [0x77078F6D+1165]&#10;). See below for more details." type="net.thucydides.core.webdriver.DriverConfigurationError">Could not instantiate new WebDriver instance of type class org.openqa.selenium.chrome.ChromeDriver (session not created: This version of ChromeDriver only supports Chrome version 108
+Current browser version is 114.0.5735.110 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-KVNLRS8F', ip: '192.168.40.158', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_362'
+Driver info: driver.version: ProvideNewDriver
+remote stacktrace: Backtrace:
+	(No symbol) [0x009DF243]
+	(No symbol) [0x00967FD1]
+	(No symbol) [0x0085D04D]
+	(No symbol) [0x0087F6B4]
+	(No symbol) [0x0087A97C]
+	(No symbol) [0x008782E9]
+	(No symbol) [0x008AF056]
+	(No symbol) [0x008AEB2A]
+	(No symbol) [0x008A8386]
+	(No symbol) [0x0088163C]
+	(No symbol) [0x0088269D]
+	GetHandleVerifier [0x00C79A22+2655074]
+	GetHandleVerifier [0x00C6CA24+2601828]
+	GetHandleVerifier [0x00A88C0A+619850]
+	GetHandleVerifier [0x00A87830+614768]
+	(No symbol) [0x009705FC]
+	(No symbol) [0x00975968]
+	(No symbol) [0x00975A55]
+	(No symbol) [0x0098051B]
+	BaseThreadInitThunk [0x75556BA9+25]
+	RtlGetFullPathName_UEx [0x77078F9F+1215]
+	RtlGetFullPathName_UEx [0x77078F6D+1165]
+). See below for more details.</error><system-err>Could not instantiate new WebDriver instance of type class org.openqa.selenium.chrome.ChromeDriver (session not created: This version of ChromeDriver only supports Chrome version 108
+Current browser version is 114.0.5735.110 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-KVNLRS8F', ip: '192.168.40.158', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_362'
+Driver info: driver.version: ProvideNewDriver
+remote stacktrace: Backtrace:
+	(No symbol) [0x009DF243]
+	(No symbol) [0x00967FD1]
+	(No symbol) [0x0085D04D]
+	(No symbol) [0x0087F6B4]
+	(No symbol) [0x0087A97C]
+	(No symbol) [0x008782E9]
+	(No symbol) [0x008AF056]
+	(No symbol) [0x008AEB2A]
+	(No symbol) [0x008A8386]
+	(No symbol) [0x0088163C]
+	(No symbol) [0x0088269D]
+	GetHandleVerifier [0x00C79A22+2655074]
+	GetHandleVerifier [0x00C6CA24+2601828]
+	GetHandleVerifier [0x00A88C0A+619850]
+	GetHandleVerifier [0x00A87830+614768]
+	(No symbol) [0x009705FC]
+	(No symbol) [0x00975968]
+	(No symbol) [0x00975A55]
+	(No symbol) [0x0098051B]
+	BaseThreadInitThunk [0x75556BA9+25]
+	RtlGetFullPathName_UEx [0x77078F9F+1215]
+	RtlGetFullPathName_UEx [0x77078F6D+1165]
+). See below for more details.&#13;
+com.bdd.step.petStore_Step.abrimosPaginaPrincipal(petStore_Step.java:13)&#13;
+com.bdd.stepDefinition.petStore_StepDefinition.que_abrimos_la_pagina_Principal(petStore_StepDefinition.java:17)&#13;
+cucumber.runner.Runner.runPickle(Runner.java:80)&#13;
+</system-err></testcase></testsuite>

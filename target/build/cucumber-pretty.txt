@@ -1,0 +1,433 @@
+@Pagina_Principal_Pets
+Característica: Se requiere realizar lo siguiente :
+  1. Listar Pets
+  2. Crear Pet
+  3. Actualizar Pet
+  4. Eliminar Pet
+  5. Realizar Flujo de Autorización (API Key) y luego invocar a cualquier operación.
+
+  @Autorizacion_APIKEY
+  Esquema del escenario: Flujo Autorizacion [90m# src/test/resources/features/petStore.feature:15[0m
+    [36mDado validar que se ingreso a la pagina[0m
+    [36mCuando doy clic al boton Authorize[0m
+    [36mY doy clic en boton Authorize[0m
+    [36mY doy clic en boton Alow[0m
+    [36mY cargo la pagina del PetStore[0m
+    [36mCuando doy clic al boton Authorize[0m
+    [36mY ingreso credencial"<vCredencial>"[0m
+    [36mY doy clic en boton Authorize de la credencial[0m
+    [36mY doy clic en cerrar popup de Available authorizations[0m
+
+    Ejemplos: 
+
+  Antecedentes:                          [90m# src/test/resources/features/petStore.feature:11[0m
+    [31mDado [0m[31mQue abrimos la pagina Principal[0m [90m# petStore_StepDefinition.que_abrimos_la_pagina_Principal()[0m
+      [31mnet.thucydides.core.webdriver.DriverConfigurationError: Could not instantiate class org.openqa.selenium.chrome.ChromeDriver
+	at net.thucydides.core.webdriver.WebDriverFacade.newDriverInstance(WebDriverFacade.java:144)
+	at net.thucydides.core.webdriver.WebDriverFacade.newProxyDriver(WebDriverFacade.java:132)
+	at net.thucydides.core.webdriver.WebDriverFacade.getProxiedDriver(WebDriverFacade.java:102)
+	at net.thucydides.core.webdriver.WebDriverFacade.get(WebDriverFacade.java:172)
+	at net.serenitybdd.core.pages.PageObject.openPageAtUrl(PageObject.java:902)
+	at net.serenitybdd.core.pages.PageObject.open(PageObject.java:803)
+	at net.serenitybdd.core.pages.PageObject.open(PageObject.java:791)
+	at com.bdd.step.petStore_Step.abrimosPaginaPrincipal(petStore_Step.java:13)
+	at com.bdd.step.petStore_Step$ByteBuddy$eWMWEl9y.abrimosPaginaPrincipal$accessor$dO6MLiG3(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:488)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:468)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:441)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:197)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:184)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:77)
+	at com.bdd.step.petStore_Step$ByteBuddy$eWMWEl9y.abrimosPaginaPrincipal(Unknown Source)
+	at com.bdd.stepDefinition.petStore_StepDefinition.que_abrimos_la_pagina_Principal(petStore_StepDefinition.java:17)
+	at ✽.Que abrimos la pagina Principal(src/test/resources/features/petStore.feature:12)
+Caused by: net.thucydides.core.webdriver.DriverConfigurationError: Could not instantiate new WebDriver instance of type class org.openqa.selenium.chrome.ChromeDriver (session not created: This version of ChromeDriver only supports Chrome version 108
+Current browser version is 114.0.5735.110 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-KVNLRS8F', ip: '192.168.40.158', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_362'
+Driver info: driver.version: ProvideNewDriver
+remote stacktrace: Backtrace:
+	(No symbol) [0x009DF243]
+	(No symbol) [0x00967FD1]
+	(No symbol) [0x0085D04D]
+	(No symbol) [0x0087F6B4]
+	(No symbol) [0x0087A97C]
+	(No symbol) [0x008782E9]
+	(No symbol) [0x008AF056]
+	(No symbol) [0x008AEB2A]
+	(No symbol) [0x008A8386]
+	(No symbol) [0x0088163C]
+	(No symbol) [0x0088269D]
+	GetHandleVerifier [0x00C79A22+2655074]
+	GetHandleVerifier [0x00C6CA24+2601828]
+	GetHandleVerifier [0x00A88C0A+619850]
+	GetHandleVerifier [0x00A87830+614768]
+	(No symbol) [0x009705FC]
+	(No symbol) [0x00975968]
+	(No symbol) [0x00975A55]
+	(No symbol) [0x0098051B]
+	BaseThreadInitThunk [0x75556BA9+25]
+	RtlGetFullPathName_UEx [0x77078F9F+1215]
+	RtlGetFullPathName_UEx [0x77078F6D+1165]
+). See below for more details.
+	at net.thucydides.core.webdriver.WebDriverFactory.newWebdriverInstance(WebDriverFactory.java:158)
+	at net.thucydides.core.webdriver.WebDriverFacade.newDriverInstance(WebDriverFacade.java:141)
+	at net.thucydides.core.webdriver.WebDriverFacade.newProxyDriver(WebDriverFacade.java:132)
+	at net.thucydides.core.webdriver.WebDriverFacade.getProxiedDriver(WebDriverFacade.java:102)
+	at net.thucydides.core.webdriver.WebDriverFacade.get(WebDriverFacade.java:172)
+	at net.serenitybdd.core.pages.PageObject.openPageAtUrl(PageObject.java:902)
+	at net.serenitybdd.core.pages.PageObject.open(PageObject.java:803)
+	at net.serenitybdd.core.pages.PageObject.open(PageObject.java:791)
+	at com.bdd.step.petStore_Step.abrimosPaginaPrincipal(petStore_Step.java:13)
+	at com.bdd.step.petStore_Step$ByteBuddy$eWMWEl9y.abrimosPaginaPrincipal$accessor$dO6MLiG3(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:488)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:468)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:441)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:197)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:184)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:77)
+	at com.bdd.step.petStore_Step$ByteBuddy$eWMWEl9y.abrimosPaginaPrincipal(Unknown Source)
+	at com.bdd.stepDefinition.petStore_StepDefinition.que_abrimos_la_pagina_Principal(petStore_StepDefinition.java:17)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:31)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:25)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:37)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:40)
+	at cucumber.api.TestStep.executeStep(TestStep.java:102)
+	at cucumber.api.TestStep.run(TestStep.java:83)
+	at cucumber.api.TestCase.run(TestCase.java:58)
+	at cucumber.runner.Runner.runPickle(Runner.java:80)
+	at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:118)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:56)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:127)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)
+Caused by: org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 108
+Current browser version is 114.0.5735.110 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-KVNLRS8F', ip: '192.168.40.158', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_362'
+Driver info: driver.version: ProvideNewDriver
+remote stacktrace: Backtrace:
+	(No symbol) [0x009DF243]
+	(No symbol) [0x00967FD1]
+	(No symbol) [0x0085D04D]
+	(No symbol) [0x0087F6B4]
+	(No symbol) [0x0087A97C]
+	(No symbol) [0x008782E9]
+	(No symbol) [0x008AF056]
+	(No symbol) [0x008AEB2A]
+	(No symbol) [0x008A8386]
+	(No symbol) [0x0088163C]
+	(No symbol) [0x0088269D]
+	GetHandleVerifier [0x00C79A22+2655074]
+	GetHandleVerifier [0x00C6CA24+2601828]
+	GetHandleVerifier [0x00A88C0A+619850]
+	GetHandleVerifier [0x00A87830+614768]
+	(No symbol) [0x009705FC]
+	(No symbol) [0x00975968]
+	(No symbol) [0x00975A55]
+	(No symbol) [0x0098051B]
+	BaseThreadInitThunk [0x75556BA9+25]
+	RtlGetFullPathName_UEx [0x77078F9F+1215]
+	RtlGetFullPathName_UEx [0x77078F6D+1165]
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:499)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:486)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:531)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:157)
+	at net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider.lambda$newInstance$0(ChromeDriverProvider.java:64)
+	at net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver.withConfiguration(ProvideNewDriver.java:40)
+	at net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider.newInstance(ChromeDriverProvider.java:60)
+	at net.thucydides.core.webdriver.WebDriverFactory.createWebDriver(WebDriverFactory.java:169)
+	at net.thucydides.core.webdriver.WebDriverFactory.newWebdriverInstance(WebDriverFactory.java:150)
+	... 60 more
+[0m
+
+  @Pagina_Principal_Pets @Autorizacion_APIKEY
+  Esquema del escenario: Flujo Autorizacion                [90m# src/test/resources/features/petStore.feature:32[0m
+    [36mDado [0m[36mvalidar que se ingreso a la pagina[0m                [90m# petStore_StepDefinition.validar_que_se_ingreso_a_la_pagina()[0m
+    [36mCuando [0m[36mdoy clic al boton Authorize[0m                     [90m# petStore_StepDefinition.doyClicAlBotonAuthorize()[0m
+    [36mY [0m[36mdoy clic en boton Authorize[0m                          [90m# petStore_StepDefinition.doyClicEnBotonAuthorize()[0m
+    [36mY [0m[36mdoy clic en boton Alow[0m                               [90m# petStore_StepDefinition.doyClicEnBotonAlow()[0m
+    [36mY [0m[36mcargo la pagina del PetStore[0m                         [90m# petStore_StepDefinition.cargoLaPaginaDelPetStore()[0m
+    [36mCuando [0m[36mdoy clic al boton Authorize[0m                     [90m# petStore_StepDefinition.doyClicAlBotonAuthorize()[0m
+    [36mY [0m[36mingreso credencial"[0m[36m[1mtest[0m[36m"[0m                             [90m# petStore_StepDefinition.ingresoCredencial(String)[0m
+    [36mY [0m[36mdoy clic en boton Authorize de la credencial[0m         [90m# petStore_StepDefinition.doyClicEnBotonAuthorizeDeLaCredencial()[0m
+    [36mY [0m[36mdoy clic en cerrar popup de Available authorizations[0m [90m# petStore_StepDefinition.doyClicEnCerrarPopupDeAvailableAuthorizations()[0m
+
+  @petStore
+  Esquema del escenario: Listar,Crear,Actualizar,Eliminar PETS [90m# src/test/resources/features/petStore.feature:35[0m
+    [36mDado validar que se ingreso a la pagina[0m
+    [36mCuando doy clic en el icono de desplegar lista[0m
+    [36mY doy clic en el boton Try it out[0m
+    [36mY doy clic en el boton Execute[0m
+    [36mCuando doy clic en el icono de agregar Pet[0m
+    [36mY doy clic en el boton Try it out[0m
+    [36mY doy clic en el boton Execute[0m
+    [36mCuando doy clic en el icono de actualizar Pet[0m
+    [36mY doy clic en el boton Try it out[0m
+    [36mY ingreso petId"<vpetId>"[0m
+    [36mY ingreso name"<vName>"[0m
+    [36mY ingresamos status"<vStatus>"[0m
+    [36mY doy clic en el boton Execute[0m
+    [36mCuando doy clic en el icono de eliminar Pet[0m
+    [36mY doy clic en el boton Try it out[0m
+    [36mY ingreso api_key"<vapi_key>"[0m
+    [36mY ingreso pet_id"<vpet_id>"[0m
+    [36mY doy clic en el boton Execute[0m
+
+    Ejemplos: 
+
+  Antecedentes:                          [90m# src/test/resources/features/petStore.feature:11[0m
+    [31mDado [0m[31mQue abrimos la pagina Principal[0m [90m# petStore_StepDefinition.que_abrimos_la_pagina_Principal()[0m
+      [31mnet.thucydides.core.webdriver.DriverConfigurationError: Could not instantiate class org.openqa.selenium.chrome.ChromeDriver
+	at net.thucydides.core.webdriver.WebDriverFacade.newDriverInstance(WebDriverFacade.java:144)
+	at net.thucydides.core.webdriver.WebDriverFacade.newProxyDriver(WebDriverFacade.java:132)
+	at net.thucydides.core.webdriver.WebDriverFacade.getProxiedDriver(WebDriverFacade.java:102)
+	at net.thucydides.core.webdriver.WebDriverFacade.get(WebDriverFacade.java:172)
+	at net.serenitybdd.core.pages.PageObject.openPageAtUrl(PageObject.java:902)
+	at net.serenitybdd.core.pages.PageObject.open(PageObject.java:803)
+	at net.serenitybdd.core.pages.PageObject.open(PageObject.java:791)
+	at com.bdd.step.petStore_Step.abrimosPaginaPrincipal(petStore_Step.java:13)
+	at com.bdd.step.petStore_Step$ByteBuddy$z41nTpZO.abrimosPaginaPrincipal$accessor$Gliiubl6(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:488)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:468)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:441)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:197)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:184)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:77)
+	at com.bdd.step.petStore_Step$ByteBuddy$z41nTpZO.abrimosPaginaPrincipal(Unknown Source)
+	at com.bdd.stepDefinition.petStore_StepDefinition.que_abrimos_la_pagina_Principal(petStore_StepDefinition.java:17)
+	at ✽.Que abrimos la pagina Principal(src/test/resources/features/petStore.feature:12)
+Caused by: net.thucydides.core.webdriver.DriverConfigurationError: Could not instantiate new WebDriver instance of type class org.openqa.selenium.chrome.ChromeDriver (session not created: This version of ChromeDriver only supports Chrome version 108
+Current browser version is 114.0.5735.110 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-KVNLRS8F', ip: '192.168.40.158', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_362'
+Driver info: driver.version: ProvideNewDriver
+remote stacktrace: Backtrace:
+	(No symbol) [0x009DF243]
+	(No symbol) [0x00967FD1]
+	(No symbol) [0x0085D04D]
+	(No symbol) [0x0087F6B4]
+	(No symbol) [0x0087A97C]
+	(No symbol) [0x008782E9]
+	(No symbol) [0x008AF056]
+	(No symbol) [0x008AEB2A]
+	(No symbol) [0x008A8386]
+	(No symbol) [0x0088163C]
+	(No symbol) [0x0088269D]
+	GetHandleVerifier [0x00C79A22+2655074]
+	GetHandleVerifier [0x00C6CA24+2601828]
+	GetHandleVerifier [0x00A88C0A+619850]
+	GetHandleVerifier [0x00A87830+614768]
+	(No symbol) [0x009705FC]
+	(No symbol) [0x00975968]
+	(No symbol) [0x00975A55]
+	(No symbol) [0x0098051B]
+	BaseThreadInitThunk [0x75556BA9+25]
+	RtlGetFullPathName_UEx [0x77078F9F+1215]
+	RtlGetFullPathName_UEx [0x77078F6D+1165]
+). See below for more details.
+	at net.thucydides.core.webdriver.WebDriverFactory.newWebdriverInstance(WebDriverFactory.java:158)
+	at net.thucydides.core.webdriver.WebDriverFacade.newDriverInstance(WebDriverFacade.java:141)
+	at net.thucydides.core.webdriver.WebDriverFacade.newProxyDriver(WebDriverFacade.java:132)
+	at net.thucydides.core.webdriver.WebDriverFacade.getProxiedDriver(WebDriverFacade.java:102)
+	at net.thucydides.core.webdriver.WebDriverFacade.get(WebDriverFacade.java:172)
+	at net.serenitybdd.core.pages.PageObject.openPageAtUrl(PageObject.java:902)
+	at net.serenitybdd.core.pages.PageObject.open(PageObject.java:803)
+	at net.serenitybdd.core.pages.PageObject.open(PageObject.java:791)
+	at com.bdd.step.petStore_Step.abrimosPaginaPrincipal(petStore_Step.java:13)
+	at com.bdd.step.petStore_Step$ByteBuddy$z41nTpZO.abrimosPaginaPrincipal$accessor$Gliiubl6(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:488)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:468)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:441)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:197)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:184)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:77)
+	at com.bdd.step.petStore_Step$ByteBuddy$z41nTpZO.abrimosPaginaPrincipal(Unknown Source)
+	at com.bdd.stepDefinition.petStore_StepDefinition.que_abrimos_la_pagina_Principal(petStore_StepDefinition.java:17)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:31)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:25)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:37)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:40)
+	at cucumber.api.TestStep.executeStep(TestStep.java:102)
+	at cucumber.api.TestStep.run(TestStep.java:83)
+	at cucumber.api.TestCase.run(TestCase.java:58)
+	at cucumber.runner.Runner.runPickle(Runner.java:80)
+	at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:118)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:56)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:127)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)
+Caused by: org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 108
+Current browser version is 114.0.5735.110 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-KVNLRS8F', ip: '192.168.40.158', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_362'
+Driver info: driver.version: ProvideNewDriver
+remote stacktrace: Backtrace:
+	(No symbol) [0x009DF243]
+	(No symbol) [0x00967FD1]
+	(No symbol) [0x0085D04D]
+	(No symbol) [0x0087F6B4]
+	(No symbol) [0x0087A97C]
+	(No symbol) [0x008782E9]
+	(No symbol) [0x008AF056]
+	(No symbol) [0x008AEB2A]
+	(No symbol) [0x008A8386]
+	(No symbol) [0x0088163C]
+	(No symbol) [0x0088269D]
+	GetHandleVerifier [0x00C79A22+2655074]
+	GetHandleVerifier [0x00C6CA24+2601828]
+	GetHandleVerifier [0x00A88C0A+619850]
+	GetHandleVerifier [0x00A87830+614768]
+	(No symbol) [0x009705FC]
+	(No symbol) [0x00975968]
+	(No symbol) [0x00975A55]
+	(No symbol) [0x0098051B]
+	BaseThreadInitThunk [0x75556BA9+25]
+	RtlGetFullPathName_UEx [0x77078F9F+1215]
+	RtlGetFullPathName_UEx [0x77078F6D+1165]
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:499)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:486)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:531)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:157)
+	at net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider.lambda$newInstance$0(ChromeDriverProvider.java:64)
+	at net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver.withConfiguration(ProvideNewDriver.java:40)
+	at net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider.newInstance(ChromeDriverProvider.java:60)
+	at net.thucydides.core.webdriver.WebDriverFactory.createWebDriver(WebDriverFactory.java:169)
+	at net.thucydides.core.webdriver.WebDriverFactory.newWebdriverInstance(WebDriverFactory.java:150)
+	... 60 more
+[0m
+
+  @Pagina_Principal_Pets @petStore
+  Esquema del escenario: Listar,Crear,Actualizar,Eliminar PETS [90m# src/test/resources/features/petStore.feature:59[0m
+    [36mDado [0m[36mvalidar que se ingreso a la pagina[0m                    [90m# petStore_StepDefinition.validar_que_se_ingreso_a_la_pagina()[0m
+    [36mCuando [0m[36mdoy clic en el icono de desplegar lista[0m             [90m# petStore_StepDefinition.doyClicEnElIconoDeDesplegarLista()[0m
+    [36mY [0m[36mdoy clic en el boton Try it out[0m                          [90m# petStore_StepDefinition.doyClicEnElBotonTryItOut()[0m
+    [36mY [0m[36mdoy clic en el boton Execute[0m                             [90m# petStore_StepDefinition.doyClicEnElBotonExecute()[0m
+    [36mCuando [0m[36mdoy clic en el icono de agregar Pet[0m                 [90m# petStore_StepDefinition.doyClicEnElIconoDeAgregarPet()[0m
+    [36mY [0m[36mdoy clic en el boton Try it out[0m                          [90m# petStore_StepDefinition.doyClicEnElBotonTryItOut()[0m
+    [36mY [0m[36mdoy clic en el boton Execute[0m                             [90m# petStore_StepDefinition.doyClicEnElBotonExecute()[0m
+    [36mCuando [0m[36mdoy clic en el icono de actualizar Pet[0m              [90m# petStore_StepDefinition.doyClicEnElIconoDeActualizarPet()[0m
+    [36mY [0m[36mdoy clic en el boton Try it out[0m                          [90m# petStore_StepDefinition.doyClicEnElBotonTryItOut()[0m
+    [36mY [0m[36mingreso petId"[0m[36m[1m6000600[0m[36m"[0m                                   [90m# petStore_StepDefinition.ingresoPetId(String)[0m
+    [36mY [0m[36mingreso name"[0m[36m[1mEdwin Poblete[0m[36m"[0m                              [90m# petStore_StepDefinition.ingresoName(String)[0m
+    [36mY [0m[36mingresamos status"[0m[36m[1m400[0m[36m"[0m                                   [90m# petStore_StepDefinition.ingresamosStatus(String)[0m
+    [36mY [0m[36mdoy clic en el boton Execute[0m                             [90m# petStore_StepDefinition.doyClicEnElBotonExecute()[0m
+    [36mCuando [0m[36mdoy clic en el icono de eliminar Pet[0m                [90m# petStore_StepDefinition.doyClicEnElIconoDeEliminarPet()[0m
+    [36mY [0m[36mdoy clic en el boton Try it out[0m                          [90m# petStore_StepDefinition.doyClicEnElBotonTryItOut()[0m
+    [36mY [0m[36mingreso api_key"[0m[36m[1mtest[0m[36m"[0m                                    [90m# petStore_StepDefinition.ingresoApi_key(String)[0m
+    [36mY [0m[36mingreso pet_id"[0m[36m[1mabc123[0m[36m"[0m                                   [90m# petStore_StepDefinition.ingresoPet_id(String)[0m
+    [36mY [0m[36mdoy clic en el boton Execute[0m                             [90m# petStore_StepDefinition.doyClicEnElBotonExecute()[0m
